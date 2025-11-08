@@ -1,0 +1,10 @@
+Deployment:
+    name: test-nginx
+    image: nginx
+    label:
+      - key: app
+      - value: test-nginx-helm
+service:
+   port: 8080
+   target-port: 80
+
