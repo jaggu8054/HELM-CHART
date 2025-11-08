@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-nginx-helm
+  name: {{.Values.Deployment.name}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-nginx-helm
+  template:
+    metadata:
+      labels:
+        app: test-nginx-helm
+    spec:
+      containers:
+      - image: nginx
+        name: {{.Values.Deployment.name}}
+

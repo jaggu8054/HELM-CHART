@@ -3,7 +3,17 @@ entries:
   test-nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-11-08T12:15:59.024923336Z"
+    created: "2025-11-08T13:01:25.803844278Z"
+    description: A Helm chart for Kubernetes
+    digest: 76af5fe097ed2ddd3b28207e537367a672e047048e2b5ef1f4fc58ca25f2b5a3
+    name: test-nginx
+    type: application
+    urls:
+    - test-nginx-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-11-08T13:01:25.803647813Z"
     description: A Helm chart for Kubernetes
     digest: 9e02abbdd3bf8e482db8bbf4aa88a2563ecb6d122edbe90efe9915486ac58434
     name: test-nginx
@@ -11,4 +21,4 @@ entries:
     urls:
     - test-nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-08T12:15:59.024413231Z"
+generated: "2025-11-08T13:01:25.803389109Z"

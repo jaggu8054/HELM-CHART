@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: test-nginx-helm
+  name: {{.Values.Deployment.name}}
+spec:
+  ports:
+  - name: {{.Values.Deployment.name}}
+    port: {{.Values.service.port}}
+    protocol: TCP
+    targetPort: {{.Values.service.targetPort}}
+  selector:
+    app: test-nginx-helm
+  type: NodePort
